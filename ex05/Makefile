@@ -1,11 +1,11 @@
-NAME = replace
+NAME = Harl
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp
+SRC = main.cpp Harl.cpp
 all : $(NAME)
 
-$(NAME): $(SRC)
+$(NAME):
 	$(CXX) $(CXXFLAGS) $(SRC) -o $(NAME)
 
 clean :
