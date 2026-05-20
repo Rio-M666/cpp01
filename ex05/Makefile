@@ -5,7 +5,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SRC = main.cpp Harl.cpp
 all : $(NAME)
 
-$(NAME):
+$(NAME): $(SRC)
 	$(CXX) $(CXXFLAGS) $(SRC) -o $(NAME)
 
 clean :
