@@ -2,10 +2,10 @@
 
 Harl::Harl()
 {
-};
+}
 Harl::~Harl()
 {
-};
+}
 
 void Harl::debug(void)
 {
