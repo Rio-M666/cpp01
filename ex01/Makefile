@@ -28,3 +28,5 @@ fclean: clean
 re: fclean all
 
 -include $(DEP)
+
+.PHONY: all clean fclean re
