@@ -1,10 +1,10 @@
 #include "Harl.hpp"
 
-Harl::Harl(){
-
+Harl::Harl()
+{
 };
-Harl::~Harl(){
-
+Harl::~Harl()
+{
 };
 
 void Harl::debug(void)
