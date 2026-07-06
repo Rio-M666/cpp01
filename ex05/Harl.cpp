@@ -29,18 +29,18 @@ void Harl::error(void)
 
 void Harl::complain(std::string level)
 {
-	int i = 0;
-	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-	void (Harl::*ptr[4])() = {&Harl::debug, &Harl::info, &Harl::warning,
-		&Harl::error};
-	while (i < 4)
+	const int level_count = 4;
+	std::string levels[level_count] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	void (Harl::*ptr[level_count])() = {&Harl::debug, &Harl::info,
+		&Harl::warning, &Harl::error};
+
+	for (int i = 0; i < level_count; i++)
 	{
 		if (level == levels[i])
 		{
 			(this->*ptr[i])();
 			return ;
 		}
-		i++;
 	}
 	std::cout << "No valid level." << std::endl;
 }

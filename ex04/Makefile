@@ -2,7 +2,7 @@ NAME = replace
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
-SRC = main.cpp
+SRC = main.cpp FileReplacer.cpp
 OBJDIR = obj
 DEPDIR = dep
 OBJ = $(addprefix $(OBJDIR)/,$(SRC:.cpp=.o))
